@@ -130,4 +130,5 @@ Di chuyển về thư mục cha
 
 ### 1.2.3 cd -
 Quay trở lại thư mục ta vừa rời đi trước đó
+
 ![Imgur](https://i.imgur.com/yU7xUY2.png)
