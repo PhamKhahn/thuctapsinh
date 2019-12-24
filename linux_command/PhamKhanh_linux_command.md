@@ -87,7 +87,7 @@ Nếu ta tin rằng 1 man page tồn tại mà lại không access được vào
 ```
 #mandb
 ```
-
+=============================================================
 # Linux Command2
 - pwd
 - cd
@@ -95,6 +95,7 @@ Nếu ta tin rằng 1 man page tồn tại mà lại không access được vào
 - mkdir
 - rmdir
 
+dir: directory
 ### 1.1. pwd
 Chỉ ra vị trí thư mục ( đường dẫn tuyệt đối) hiện tại mà ta đang đứng (làm việc)
 ```
@@ -132,3 +133,88 @@ Di chuyển về thư mục cha
 Quay trở lại thư mục ta vừa rời đi trước đó
 
 ![Imgur](https://i.imgur.com/yU7xUY2.png)
+
+
+### 1.3. ls
+- Liệt kê các content của thư mục
+- Các option đi kèm của ls:
+```
+-a : Hiển thị tất cả các file,dir kể cả các file và dir ẩn 
+-l : Hiện thị chi tiết thuộc tính,các quyền, sở hữu, độ lớn của file,dir
+-lh : Hiển thị chi tiết; thông số độ lớn sẽ hiện thị ở dạng dễ đọc hơn 
+```
+![Imgur](https://i.imgur.com/DA6oaFz.png)
+
+### 1.4. mkdir
+Tạo các dir 
+```
+#mkdir option <tên dir/ đường dẫn đến nơi tạo dir kèm tên dir>
+```
+- option thường dùng:
+```
+-p : Tạo cả dir cha trong đường dẫn nếu dir đó chưa tồn tại
+```
+
+![Imgur](https://i.imgur.com/txjtZJd.png)
+![Imgur](https://i.imgur.com/LDOC7XP.png)
+
+### 1.5. rmdir
+Xóa 1 dir nếu nó trống (empty)
+```
+#rmdir option path
+```
+option:
+```
+-p : Xóa kiểu đệ quy (Xóa dir cuối trong path nếu nó trống;rồi đến dir cha của nó;cứ thể chạy ngược lại cho đến khi dir được chọn không trống)
+```
+![Imgur](https://i.imgur.com/Y7lrJNo.png)
+
+===============================
+# Linux Command3
+ - file
+ - touch
+ - rm
+ - cp
+ - mv
+ - rename
+
+ ### 1.1. file
+- Xác định loại của file
+- Linux không sử dụng extension mở rộng đuôi file (ví dụ: file1.pdf nhưng bản chất lại là file text -> đuôi không phản ánh loại file ) 
+
+![Imgur](https://i.imgur.com/4PU6d6t.png)
+
+### 1.2. touch
+- Tạo 1 file trống mới
+- Thêm option "-t" để set time cho file . Nếu không sẽ lấy theo giờ trên hệ thống
+
+![Imgur](https://i.imgur.com/LdWSwxV.png)
+
+
+### 1.3. rm
+- 2 option:
+```
+-i : Hỏi trước khi xóa file. (thực ra nếu không thêm thì vẫn sẽ hỏi- trên CentOS7)
+-rf : Xóa mọi thứ miễn là ta có quyền ( cần thận khi sử dụng rm -rf khi đang là root)
+```
+![Imgur](https://i.imgur.com/RNfxn8q.png)
+
+
+### 1.4. cp
+Copy file
+- Các option:
+```
+-r : copy 1 folder tới 1 folder khác
+-i : Hỏi trước khi ghi đè (Trên CentOs7 không thêm -i, vẫn hỏi)
+```
+
+![Imgur](https://i.imgur.com/Jh3vuyE.png)
+![Imgur](https://i.imgur.com/q7k4Xau.png)
+
+### 1.5. mv
+Thay đổi tên file/dir hoặc di chuyển file/dir tới 1 dir khác
+- Option
+```
+-i : Hỏi trước khi ghi đè (Tương tự những phần trên, không có -> vẫn hỏi)
+```
+![Imgur](https://i.imgur.com/ywQn7gT.png)
