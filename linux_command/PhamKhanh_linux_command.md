@@ -89,6 +89,7 @@ Nếu ta tin rằng 1 man page tồn tại mà lại không access được vào
 ```
 =============================================================
 # Linux Command2
+Làm việc với các directory
 - pwd
 - cd
 - ls
@@ -171,6 +172,7 @@ option:
 
 ===============================
 # Linux Command3
+Làm việc với file
  - file
  - touch
  - rm
@@ -218,3 +220,69 @@ Thay đổi tên file/dir hoặc di chuyển file/dir tới 1 dir khác
 -i : Hỏi trước khi ghi đè (Tương tự những phần trên, không có -> vẫn hỏi)
 ```
 ![Imgur](https://i.imgur.com/ywQn7gT.png)
+
+### 1.6. rename
+Đổi tên file
+- Nếu đổi số lượng ít -> dùng lệnh **mv**
+- Nếu số lượng nhiều dùng **rename**
+ 
+ Trên CentOs  (Trên Ubuntu sẽ khác)
+ ```
+#rename [options] expression replacement file...
+ ```
+ Ví dụ:
+
+ ```
+rename .txt .pdf *.txt
+ ```
+ --> đổi tất cả các file có đuôi .txt thành đuôi .pdf
+
+ ![Imgur](https://i.imgur.com/aHysvlm.png)
+
+
+# Linux Command4
+Làm việc với nội dung file
+- head
+- tail
+- cat
+- tac
+- more
+- less
+- strings
+
+### 1.1. head
+- Hiển thị 10 dòng đầu tiên của file
+- Các option
+```
+-n : Hiển thị n dòng đầu tiên
+-cn      : Hiển thị n byte đầu tiên
+```
+![Imgur](https://i.imgur.com/LosoE5I.png)
+
+### 1.2. tail
+- Hiển thị 10 dòng cuối cùng của file
+- Các option:
+```
+-n : Hiển thị n dòng cuối cùng
+-f : Hiển thị đồng thời theo dõi file -> file được update -> hiển thị thêm
+```
+
+![Imgur](https://i.imgur.com/MI6LPHz.png)
+
+### 1.3. cat
+(copy standard input đưa ra standard output)
+
+Có thể cat 1 lúc nhiều file
+
+![Imgur](https://i.imgur.com/V0PBSHm.png)
+
+- 1 số trường hợp sử dụng khác của cat
+```
+#cat file1 file2 ... > text.txt     : Đưa nội dùng file1,file2,.. vào file text.txt (Nếu chưa có -> tạo; Nếu file đã có content -> Xóa content, ghi mới)
+
+#cat > newfile.txt      : Tạo 1 file mới và cho phép nhập content ngay bên dưới lệnh ( Ctrl D để send EOF đến tiến trình đang chạy và kết thúc cat )
+
+# 
+
+
+```
