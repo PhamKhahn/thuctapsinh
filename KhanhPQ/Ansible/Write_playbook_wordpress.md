@@ -8,7 +8,7 @@ Ta sử dụng 1 server và 1 node client.
 
 Cả 2 đều cài CentOS 7.
 
-Trên Server đã cài đặt Ansbile.
+Trên Server đã cài đặt Ansbile, đã trao đổi SSH key.
 
 ![Imgur](https://i.imgur.com/znGcyYY.png)
 
