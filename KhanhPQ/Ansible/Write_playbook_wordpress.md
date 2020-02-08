@@ -1,6 +1,7 @@
 # Viết Playbook cài đặt WordPress trên CentOS 7
 Ở bài viết trước, chúng ta đã cùng nhau tìm hiểu về các thành phần, quy tắc cũng như cách viết một playbook.
-Ở bài viết lần này tôi sẽ cùng các bạn xây dựng một playbook hoàn chỉnh với mục đích cài đặt Wordpress.
+
+Sang bài viết lần này tôi sẽ cùng các bạn xây dựng một playbook hoàn chỉnh với mục đích cài đặt Wordpress.
 
 ## I. Mô hình
 Ta sử dụng 1 server và 1 node client. 
@@ -41,7 +42,7 @@ Tìm các module liên quan đến những công việc nằm trong quy trình k
 - mysql_user
 - replace
 
-Muốn biết tác dụng của các module, bạn hãy truy cập:
+Muốn biết tác dụng của các module và các parameter của chúng bạn hãy truy cập:
 
 https://docs.ansible.com/ansible/latest/modules/list_of_all_modules.html
 
