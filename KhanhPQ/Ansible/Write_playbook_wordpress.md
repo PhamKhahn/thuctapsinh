@@ -12,6 +12,7 @@ Trên Server đã cài đặt Ansbile.
 ![Imgur](https://i.imgur.com/znGcyYY.png)
 
 **Inventory**
+
 ![Imgur](https://i.imgur.com/OHgEQff.png)
 ## II. Các công việc cần làm và module liên quan
 ### 1. Các công việc cần làm
