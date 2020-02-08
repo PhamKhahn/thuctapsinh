@@ -365,3 +365,8 @@ ansible-playbook -i /etc/ansible/hosts playbook-wordpress.yml
 ![Imgur](https://i.imgur.com/d1wDYzt.png)
 
 ![Imgur](https://i.imgur.com/LVfNn4b.png)
+
+## V. Tổng kết
+Vừa rồi tôi đã cùng bạn viết một playbook nhằm mục đích tự động hóa việc cài đặt WordPress trên môi trường CentOS 7.
+
+Chúc các bạn thành công!!!!
