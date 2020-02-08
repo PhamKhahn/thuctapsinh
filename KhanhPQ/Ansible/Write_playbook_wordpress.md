@@ -59,7 +59,9 @@ Bạn chỉ cần lên Google search : **ansible module** + **keyword bước c�
 
 
 ## III. Viết Playbook
-Trước khi bắt đầu phần III, tôi hy vọng bạn sẽ dành ra chút thời gian để tìm hiểu xem tác dụng của các module tôi đề cập phía trên.
+Trước khi bắt đầu phần III, hy vọng bạn sẽ dành ra chút thời gian click vào đường link mà tôi đã cung cấp để tìm hiểu xem tác dụng của các module tôi đề cập phía trên.
+
+Và tốt nhất là bạn đứng tắt nó. Bạn sẽ còn phải ngụp lặn trong đó khá nhiều lần khi chúng ta truyền các parameter cho các module. 
 
 Giờ chúng ta đã biết quy trình, có các module liên quan. Việc còn lại duy nhất bây giờ là biến những mảnh ghép này thành một bức tranh hoàn chỉnh.
 
