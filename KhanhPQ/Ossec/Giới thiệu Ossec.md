@@ -31,15 +31,21 @@ OSSEC là phần mềm mã nguồn mở giúp phát hiện xâm nhập dựa tr�
 ó đa nền tảng có thể mở rộng và có nhiều cơ chế bảo mật khác nhau.
 
 ### 2. Tính năng 
-- Log based Intrusion Detection (LIDs) : Chủ động theo dõi và phân tích dữ liệu real-time từ nhiều nguồn sinh log.
+- Log based Intrusion Detection (LIDs) and Log Monitoring
+    - Chủ động theo dõi và phân tích dữ liệu real-time từ nhiều nguồn sinh log.
+    - Ngoài ra, Ossec sẽ thu thập,phân tích và kiểm tra mối tương quan các log và cho ta biết những điều đáng ngờ đang xảy ra trong hệ thống (bị tấn công, lỗi, sử dụng sai,..),các phần mềm được cài đặt thêm, Rule tường lửa bị đổi.
 
 - Compliance Auditing : Kiểm soát các ứng dụng và hệ thống nhằm tuân thủ các yêu cầu, tiêu chuẩn về bảo mật như PCI-DSS và CIS.
 
-- Rootkit and Malware Detection : Phân tích ở cấp độ file và tiến trình nhằm phát hiện các ứng dụng độc hai và các rootkit.
-
+- Rootkit and Malware Detection
+    - Tin tặc thường muốn che dấu hành động và quay lại hệ thống đã xâm nhập được
+    - Ossec phân tích ở cấp độ file và tiến trình nhằm phát hiện các ứng dụng độc hại, các rootkit hay các file hệ thống bị sửa đổi theo cách phổ biến với rootkit
+    
 - File Integrity Monitoring (FIM) : Phát hiện các thay đổi đối với hệ thống.
 
-- Active Response : Các hành vi ứng phó lại các cuộc tấn công vào hệ thống trong thời gian thực.
+- Active Response
+    - Các hành vi ứng phó lại các cuộc tấn công vào hệ thống trong thời gian thực.
+    - Giúp ngăn sự cố lan rộng trước khi admin có thể hành động
 
 - System Inventory : Thu thập các thông tin hệ thống như phần mềm được cài đặt, harward,...
 
