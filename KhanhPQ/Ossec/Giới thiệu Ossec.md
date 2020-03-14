@@ -68,7 +68,7 @@ OSSEC là phần mềm mã nguồn mở giúp phát hiện xâm nhập dựa tr�
 - Giám sát trên agent, agentless (Client không cài đặt được gói agent) như router, firewall
 
 ### 4. Kiến trúc và mô hình hoạt động của Ossec
-Ossec hoạt động theo mô hình Client - Server
+Ossec hoạt động theo mô hình Client-Server  (hay Agent-Server)
 
 <img src="..\Ossec\Kien_truc1.png"> 
 <img src="..\Ossec\Kientruc2.png">
@@ -93,8 +93,8 @@ Bản chất thì là 1 phần mềm được cài đặt trên máy client giú
 
 Nhưng khi nói Agent thì là để chỉ máy Client được cài agent.
 
-Chú ý: 
-- Windows chỉ có thể làm Agent chứ không làm Server được.
+*Chú ý:* 
+- Windows OS chỉ có thể làm Agent chứ không làm Server được.
 
 **4.3 Agentless**
 
