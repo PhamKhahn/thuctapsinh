@@ -115,6 +115,7 @@ Khi cài đặt trong VMware ESX giúp nhận được thời điểm các VM gu
 Ngoài ra nó cũng cảnh báo nếu bất kỳ tùy chọn cấu hình không an toàn nào được bật.
 
 **4.5 Firewalls, switches and routers**
+
 Chính là các Agentless
 
 Ossec có thể nhận và phân tích nhật ký hệ thống từ nhiều firewall, switch, router.
