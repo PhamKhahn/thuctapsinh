@@ -65,7 +65,7 @@ Ossec hoạt động theo mô hình Client - Server
 <img src="..\Ossec\Kientruc2.png">
 
 
-**5.1. Manager (Server)**
+**4.1. Manager (Server)**
 
 Lưu trữ cơ sở dữ liệu của việc kiểm tra tính toàn vẹn file; kiểm tra các log, event.
 
@@ -73,7 +73,7 @@ Quản lý, lưu tất cả các rule, decoder (bộ giải mã), cấu hình ch
 
 Server không chạy trên Windows OS.
 
-**5.2. Agent**
+**4.2. Agent**
 
 Bản chất thì là 1 phần mềm được cài đặt trên máy client giúp thu thập các thông tin và gửi cho Server để phân tích, thống kê. 
 - Chiếm lượng memory và CPU nhỏ,không đáng kể
@@ -87,7 +87,7 @@ Nhưng khi nói Agent thì là để chỉ máy Client được cài agent.
 Chú ý: 
 - Windows chỉ có thể làm Agent chứ không làm Server được.
 
-**5.3 Agentless**
+**4.3 Agentless**
 
 Là các hệ thống không cài được gói agent
 
@@ -95,7 +95,7 @@ Trên các Agentless này có thể thực hiện việc kiểm tra tính toàn 
 
 Giúp monitor firewall, router hay thậm chí cả hệ thống Unix
 
-**5.4 Ảo hóa/ VMware**
+**4.4 Ảo hóa/ VMware**
 
 Cho phép cài đặt agent trên các guest OS (Máy ảo)
 
@@ -105,7 +105,7 @@ Khi cài đặt trong VMware ESX giúp nhận được thời điểm các VM gu
 
 Ngoài ra nó cũng cảnh báo nếu bất kỳ tùy chọn cấu hình không an toàn nào được bật.
 
-**5.5 Firewalls, switches and routers**
+**4.5 Firewalls, switches and routers**
 
 Ossec có thể nhận và phân tích nhật ký hệ thống từ nhiều firewall, switch, router.
 
