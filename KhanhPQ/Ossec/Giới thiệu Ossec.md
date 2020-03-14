@@ -1,4 +1,4 @@
-# Tìm hiểu về hệ thống phát hiện xâm nhập Ossec HIDS [part 1]
+# Tìm hiểu về hệ thống phát hiện xâm nhập Ossec [part 1]
 Nghe tiêu đề thôi thì tôi đoán bạn cũng mường tượng ra chức năng của Ossec rồi đúng không? Hãy để tôi giới thiệu chi tiết hơn về nó - một công cụ vô cùng hữu ích và mạnh mẽ
 
 Nhưng trước hết hãy nói qua một chút khái niệm về IDS nhé
