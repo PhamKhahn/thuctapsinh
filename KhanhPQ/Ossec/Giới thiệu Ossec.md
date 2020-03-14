@@ -66,6 +66,7 @@ Ossec hoạt động theo mô hình Client - Server
 
 
 **5.1. Manager (Server)**
+
 Lưu trữ cơ sở dữ liệu của việc kiểm tra tính toàn vẹn file; kiểm tra các log, event.
 
 Quản lý, lưu tất cả các rule, decoder (bộ giải mã), cấu hình chính. Điều này giúp dễ dàng quản lý, dù cho có lượng lớn agent
@@ -87,6 +88,7 @@ Chú ý:
 - Windows chỉ có thể làm Agent chứ không làm Server được.
 
 **5.3 Agentless**
+
 Là các hệ thống không cài được gói agent
 
 Trên các Agentless này có thể thực hiện việc kiểm tra tính toàn vẹn
@@ -94,6 +96,7 @@ Trên các Agentless này có thể thực hiện việc kiểm tra tính toàn 
 Giúp monitor firewall, router hay thậm chí cả hệ thống Unix
 
 **5.4 Ảo hóa/ VMware**
+
 Cho phép cài đặt agent trên các guest OS (Máy ảo)
 
 Ngoài ra cũng được cài đặt trong VMware ESX nhưng có thể dẫn đến sự cố không hỗ trợ.
