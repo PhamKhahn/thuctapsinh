@@ -27,8 +27,8 @@ Bạn hãy thử bật 1 Tab mới trên Web Browser của mình  và search "Th
 
 Vậy thì tại sao ?
 ### 1. Ossec là gì?
-OSSEC là phần mềm mã nguồn mở giúp phát hiện xâm nhập dựa trên host (HIDS); 
-ó đa nền tảng có thể mở rộng và có nhiều cơ chế bảo mật khác nhau.
+- OSSEC là phần mềm mã nguồn mở giúp phát hiện xâm nhập dựa trên host (HIDS) 
+- Nó đa nền tảng, có thể mở rộng và có nhiều cơ chế bảo mật khác nhau.
 
 ### 2. Các tính năng của Ossec
 - Log based Intrusion Detection (LIDs) and Log Monitoring:
