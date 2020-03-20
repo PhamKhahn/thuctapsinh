@@ -231,9 +231,9 @@ Sau đó Import Key lại bình thường
 
 
 
-==============================================================
 
-# NOTE
+
+### **NOTE**
 - Nhớ mở port để Server có thể giao tiếp với Agent
     
    ```
