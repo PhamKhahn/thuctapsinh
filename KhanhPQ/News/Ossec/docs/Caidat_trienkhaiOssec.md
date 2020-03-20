@@ -6,20 +6,24 @@ Phần này, tôi sẽ giúp bạn cài đặt và triển khai Ossec với mô 
 # I. Mô hình
 <img src="..\imgs\Screenshot_6.png">
 
-- Ta sử dụng mô hình Server-Agent
+- Ta sử dụng mô hình Server-Agent:
+
+<img src="..\imgs\Screenshot_7.png">
+
 Với:
-    - Server:
-        ```
+
+- Server:
+    ```
         OS : CentOS 7
         IP : 10.10.34.111/24
-        ```
+    ```
 
-    - Agent:
+- Agent:
 
-        ```
+    ```
         OS : CentOS 7
         IP : 10.10.34.112/24
-        ```
+    ```
 # II. Cài đặt
 ## **1. Ossec Server**
 **B1**: Cài đặt các pacakage hỗ trợ trước khi cài đặt ossec
@@ -236,4 +240,20 @@ Sau đó Import Key lại bình thường
    firewall-cmd --reload
    ```
 
- 
+## IV. Tổng kết
+Như vậy tôi đã giới thiệu cho bạn cách để kết nối 1 Agent đến Server
+
+Tức là đặt Agent đó dưới sự kiểm soát,bảo vệ của Ossec HIDS Server.
+
+Tuy nhiên, chúng ta sẽ không chỉ dừng lại ở đây. Có khá nhiều bài toán đặt ra:
+- Nếu có rất nhiều Agent thì sao. Chẳng lẽ ta phải lặp đi lặp lại từng đó thao tác với mỗi Agent ?
+- Làm sao bạn có thể nhận cảnh báo qua mail mà không cần vào trực tiếp file log cảnh báo của Ossec Server để xem ?
+- Quá nhiều cảnh báo bắn về email thì phải làm sao ?
+
+    **...**
+
+Những bài toán đó, chúng ta sẽ lần lượt giải quyết khi đi tới tìm hiểu nhưng thành phần cốt lõi tạo nên Ossec.
+
+Cảm ơn bạn đã xem hết bài viết của tôi.
+
+Chúc bạn thành công!!!
