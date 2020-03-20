@@ -167,7 +167,13 @@ Choose your action: A,E,L,R or Q: A
 
  
 
-
+### **NOTE**
+- Nhớ mở port để Server có thể giao tiếp với Agent
+    
+   ```
+   firewall-cmd --permanent --add-port=1514/udp
+   firewall-cmd --reload
+   ```
 ## 2. manage_agents trên  OSSEC Agent
 Việc add Agent trên Server là chưa đủ, muốn connect Server và Agent thì cần Import key Server đã tạo cho Agent vào chính máy Agent 
 
@@ -230,16 +236,6 @@ Sau đó Import Key lại bình thường
 <img src="..\imgs\Screenshot_4.png">
 
 
-
-
-
-### **NOTE**
-- Nhớ mở port để Server có thể giao tiếp với Agent
-    
-   ```
-   firewall-cmd --permanent --add-port=1514/udp
-   firewall-cmd --reload
-   ```
 
 ## IV. Tổng kết
 Như vậy tôi đã giới thiệu cho bạn cách để kết nối 1 Agent đến Server
