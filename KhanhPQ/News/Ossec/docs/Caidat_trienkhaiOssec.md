@@ -242,12 +242,12 @@ Như vậy tôi đã giới thiệu cho bạn cách để kết nối 1 Agent đ
 
 Tức là đặt Agent đó dưới sự kiểm soát,bảo vệ của Ossec HIDS Server.
 
-Tuy nhiên, chúng ta sẽ không chỉ dừng lại ở đây. Có khá nhiều bài toán đặt ra:
+Tuy nhiên, hầu như tất cả config đều là mặc định, chúng ta sẽ không chỉ dừng lại ở đây. Có khá nhiều bài toán đặt ra:
 - Nếu có rất nhiều Agent thì sao. Chẳng lẽ ta phải lặp đi lặp lại từng đó thao tác với mỗi Agent ?
 - Làm sao bạn có thể nhận cảnh báo qua mail mà không cần vào trực tiếp file log cảnh báo của Ossec Server để xem ?
 - Quá nhiều cảnh báo bắn về email thì phải làm sao ?
 
-    **...**
+    **. .   .**
 
 Những bài toán đó, chúng ta sẽ lần lượt giải quyết khi đi tới tìm hiểu nhưng thành phần cốt lõi tạo nên Ossec.
 
