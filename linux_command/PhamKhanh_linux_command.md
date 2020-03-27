@@ -1,4 +1,4 @@
-# Linux Command1
+# Linux Command1 :  man pages 
 - man
 - whatis
 - whereis
@@ -88,7 +88,7 @@ Nếu ta tin rằng 1 man page tồn tại mà lại không access được vào
 #mandb
 ```
 =============================================================
-# Linux Command2
+# Linux Command2 :  working with directories
 Làm việc với các directory
 - pwd
 - cd
@@ -171,7 +171,7 @@ option:
 ![Imgur](https://i.imgur.com/Y7lrJNo.png)
 
 ===============================
-# Linux Command3
+# Linux Command 3 : working with files
 Làm việc với file
  - file
  - touch
@@ -240,7 +240,9 @@ rename .txt .pdf *.txt
  ![Imgur](https://i.imgur.com/aHysvlm.png)
 
 
-# Linux Command4
+===============================================================
+
+# Linux Command 4 :  working with file contents
 Làm việc với nội dung file
 - head
 - tail
@@ -279,10 +281,59 @@ Có thể cat 1 lúc nhiều file
 - 1 số trường hợp sử dụng khác của cat
 ```
 #cat file1 file2 ... > text.txt     : Đưa nội dùng file1,file2,.. vào file text.txt (Nếu chưa có -> tạo; Nếu file đã có content -> Xóa content, ghi mới)
-
+```
+![Imgur](https://i.imgur.com/4TDLoUp.png)
+```
 #cat > newfile.txt      : Tạo 1 file mới và cho phép nhập content ngay bên dưới lệnh ( Ctrl D để send EOF đến tiến trình đang chạy và kết thúc cat )
-
-# 
-
+```
+![Imgur](https://i.imgur.com/JFkOIJx.png)
+```
+#cat > newfile << stop  : Tạo 1 file mới và cho phép nhập content ngay bên dưới lệnh. Khi duy nhất từ "stop" trên 1 dòng mới và Enter -> sẽ kết thúc nhập
 
 ```
+![Imgur](https://i.imgur.com/HV091aE.png)
+
+```
+#cat file1 > text.txt : tương tự trường hợp đầu tiên (copy nội dung file1 nếu tồn tại đưa vào text.txt)
+```
+
+### 1.4.tac
+Tương tự lệnh cat nhưng đọc ngược từ dưới lên
+
+![Imgur](https://i.imgur.com/MU7bf61.png)
+
+### 1.5. more và less
+Hiển thị nội dung các file lớn (mức hiển thị vượt quá 1 màn hình)
+
++) more : dùng SPACE để chuyển tới trang tiếp, hoặc Enter để xem từ từ các dòng tiếp theo
++) less : cho phép sử dụng lăn chuột lên xuống
+
+Cả 2 đều ấn **q** để thoát
+
+### 1.6. strings
+- Lệnh **strings** sẽ in/hiển thị tất cả các chuỗi chữ cái,ký tự
+
+    Những line chỉ có số hay rỗng thì sẽ không hiển thị
+
+    Những line chỉ cần có xuất hiện chữ cái,kỹ tự sẽ hiển thị cả dòng (cả số, khoảng trắng)
+
+    ![Imgur](https://i.imgur.com/IY7YFDJ.png)
+
+- Ngoài ra strings còn có thể đọc được các chuỗi ascii trong các tệp nhị phân (binary file)
+
+    ![Imgur](https://i.imgur.com/5em2UbK.png)
+
+===================================================================
+
+# Linux Command 5: the Linux file tree
+- Tất cả mọi thứ trong Unix đều là file
+
+- Cấu trúc thư mục bắt đầu từ **root directory** đại diện bằng dấu **/**
+
+## 1. /bin
+Chứa các tệp nhị phân (các lệnh thường dùng)
+
+## 2. /sbin
+Chứa các tệp nhị phân cấu hình hệ điều hành. Yêu cầu quyền root để thực hiện các tác vụ nhất định
+## 3. /lib
+Các tệp nhị phân ở /bin và /sbin
